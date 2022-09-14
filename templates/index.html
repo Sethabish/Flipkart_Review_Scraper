@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Flipkart Review Scraper</h1>
+    <h2 style="text-align: center">Enter product to search:</h2>
+
+    <div class="form">
+        <form action="/review" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <ul>
+  	<li>This is a flipkart review scraping project.</li>
+  	<li>Beautifulsoup, requests, lxml, flask, flask_cors libraries are used. </li>
+	<li>Deployed in Heroku.</li>
+  	<li>Upon search, the top reviews of the product searched are displayed.</li>
+	
+    </ul> 
+</div>
+{% endblock %}

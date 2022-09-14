@@ -1,0 +1,6 @@
+bs4
+Flask
+Flask-Cors
+requests
+lxml
+
